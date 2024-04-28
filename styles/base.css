@@ -1,14 +1,7 @@
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
+/* Import selected fonts from Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
+/* Apply chosen color scheme */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
