@@ -1,7 +1,7 @@
 /* Define color schema */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Color 2: Background */
+    background-color: #CCCCCC; /* Color 2: Background */
     color: #333; /* Color 1: Text */
     margin: 0;
     padding: 0;
@@ -19,6 +19,7 @@ section {
 
 h1, h2 {
     color: #336699; /* Color 1: Headings */
+    font-family: Arial, sans-serif; /* Heading Font */
 }
 
 ul {
@@ -52,4 +53,9 @@ footer {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+}
+
+/* Define typography */
+p {
+    font-family: Helvetica, sans-serif; /* Body Font */
 }
