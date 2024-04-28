@@ -1,0 +1,55 @@
+/* Define color schema */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Color 2: Background */
+    color: #333; /* Color 1: Text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #336699; /* Color 1: Headings */
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Define layout for wireframe */
+#site-name, #site-purpose, #scenarios, #color-schema, #typography, #wireframe {
+    background-color: #fff; /* Color 3: Content Background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#site-name, #site-purpose, #scenarios, #color-schema, #typography {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#wireframe {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#wireframe img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
