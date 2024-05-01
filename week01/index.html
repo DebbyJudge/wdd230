@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deborah Bayode - WDD 230 - Web Frontend Development</title>
+    <title>WDD 230: Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development">
     <meta name="author" content="Deborah Bayode">
     <link rel="stylesheet" href="styles/base.css">
@@ -11,11 +11,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* Additional CSS for navigation menu */
+        nav {
+            display: flex; /* Use Flexbox */
+            justify-content: center; /* Center align items horizontally */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            display: flex; /* Use Flexbox */
+            flex-direction: column; /* Display links vertically */
+        }
+
+        @media (min-width: 768px) {
+            nav ul {
+                flex-direction: row; /* Display links horizontally */
+            }
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="images/debbie.jpg" alt="Your Profile Picture">
-        <span>Deborah Bayode</span>
+        <img src="images/debbie.jpg" alt="Deborah Bayode">
+        <h1>Deborah Bayode</h1>
     </header>
 
     <nav>
@@ -48,5 +78,13 @@
 
     <!-- Reference the JavaScript file for dynamic content -->
     <script src="scripts/getDates.js"></script>
+
+    <script>
+        // Dynamically set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Dynamically set last modified date
+        document.getElementById('lastModified').textContent = "Last modified: " + new Date(document.lastModified).toLocaleString();
+    </script>
 </body>
 </html>
