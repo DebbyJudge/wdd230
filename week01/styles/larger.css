@@ -1,20 +1,39 @@
-@media (min-width: 768px) {
-    nav ul {
-        display: flex;
-        justify-content: center;
-    }
+<style>
+        /* Additional CSS for navigation menu */
+        nav {
+            display: flex; /* Use Flexbox */
+            justify-content: center; /* Center align items horizontally */
+        }
 
-    nav li {
-        margin: 0 10px;
-    }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            display: flex; /* Use Flexbox */
+            flex-direction: column; /* Display links vertically */
+        }
 
-    main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-    }
+        @media (min-width: 768px) {
+            nav ul {
+                display: flex;
+                justify-content: center;
+            }
 
-    .card {
-        margin: 0;
-    }
-}
+            nav li {
+                margin: 0 10px;
+            }
+
+            main {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+            }
+
+            .card {
+                margin: 0;
+            }
+        }
+
+        /* Provided CSS */
+        @media (min-width: 
