@@ -1,0 +1,35 @@
+/* baseline styling for your project */
+/* include color schemes, typography, layout styles, etc. */
+
+/* Example styles for the navigation menu */
+nav {
+    background-color: #333; /* Example background color */
+    color: #fff; /* Example text color */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  /* Hamburger icon styles */
+  .hamburger {
+    display: none; /* Hide by default */
+  }
+  
+  /* Styles for larger screens */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block; /* Display for mobile view */
+    }
+    
+    ul {
+      display: none; /* Hide menu items by default */
+    }
+  }
+  
