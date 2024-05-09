@@ -32,4 +32,13 @@ nav {
       display: none; /* Hide menu items by default */
     }
   }
+  /* Styles for larger screens */
+@media (min-width: 769px) {
+  .hamburger {
+      display: none; /* Hide hamburger button for larger screens */
+  }
   
+  ul {
+      display: block !important; /* Ensure menu items are visible */
+  }
+}
