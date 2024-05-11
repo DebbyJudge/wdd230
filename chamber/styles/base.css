@@ -41,4 +41,11 @@ nav {
   ul {
       display: block !important; /* Ensure menu items are visible */
   }
+}footer {
+  background-color: #c98484; 
+  color: rgb(255, 242, 242);
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  justify-content: space-between;
 }
