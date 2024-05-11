@@ -1,51 +1,99 @@
-/* baseline styling for your project */
-/* include color schemes, typography, layout styles, etc. */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Example styles for the navigation menu */
-nav {
-    background-color: #333; /* Example background color */
-    color: #fff; /* Example text color */
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  /* Hamburger icon styles */
-  .hamburger {
-    display: none; /* Hide by default */
-  }
-  
-  /* Styles for larger screens */
-  @media (max-width: 768px) {
-    .hamburger {
-      display: block; /* Display for mobile view */
-    }
-    
-    ul {
-      display: none; /* Hide menu items by default */
-    }
-  }
-  /* Styles for larger screens */
-@media (min-width: 769px) {
-  .hamburger {
-      display: none; /* Hide hamburger button for larger screens */
-  }
-  
-  ul {
-      display: block !important; /* Ensure menu items are visible */
-  }
-}footer {
-  background-color: #c98484; 
-  color: rgb(255, 242, 242);
-  align-items: center;
-  text-align: center;
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #ccc;
   padding: 10px;
-  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Sidebar takes 1 part, Main content takes 3 parts */
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #eee;
+  padding: 10px;
+}
+
+.main-content {
+  background-color: #fff;
+  padding: 10px;
+}
+
+footer {
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Image hover effect */
+.gallery figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery figure img {
+  transition: transform 0.3s ease;
+}
+
+.gallery figure:hover img {
+  transform: scale(1.1);
+}
+.calendar {
+  font-family: Arial, sans-serif;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.calendar th {
+  background-color: #f2f2f2;
+}
+
+.calendar tbody td {
+  background-color: #fff;
+}
+
+.calendar tbody td:hover {
+  background-color: #f2f2f2;
 }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Discover</title>
+    <meta name="description" content="Discover local attractions and events with the Chamber of Commerce.">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <h1>Discover Local Attractions</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+            <div class="hamburger">&#9776;</div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="sidebar">
+            <h2>Sidebar Content</h2>
+            <p>Welcome! Let us know if you have any questions concerning the diverse commerce that we have.</p>
+            <div id="visit-message"></div>
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Event 1: Date and Time</li>
+                <li>Event 2: Date and Time</li>
+                <!-- Add more events -->
+            </ul>
+            <h2>August 2024 Calendar</h2>
+            <div class="calendar">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Week 1 -->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <!-- Week 2 -->
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        <!-- Week 3 -->
+                        <tr>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                        </tr>
+                        <!-- Week 4 -->
+                        <tr>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                        </tr>
+                        <!-- Week 5 -->
+                        <tr>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2>Local Photos of Interest</h2>
+            <div class="gallery">
+                <!-- Add lazy loading to images -->
+                <figure>
+                    <img src="images/chamber.jpg" alt="Local Image 1" loading="lazy">
+                    <figcaption>Caption for Image 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/chamber02.jpg" alt="Local Image 2" loading="lazy">
+                    <figcaption>Caption for Image 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/chamber03.jpg" alt="Local Image 3" loading="lazy">
+                    <figcaption>Caption for Image 3</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/chamber04.jpg" alt="Local Image 4" loading="lazy">
+                    <figcaption>Caption for Image 4</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/chamber05.jpg" alt="Local Image 5" loading="lazy">
+                    <figcaption>Caption for Image 5</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/chamber06.jpg" alt="Local Image 6" loading="lazy">
+                    <figcaption>Caption for Image 6</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chamber of Commerce</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const visitMessage = document.getElementById('visit-message');
+            const lastVisit = localStorage.getItem('lastVisit');
+
+            if (!lastVisit) {
+                visitMessage
