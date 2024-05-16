@@ -110,3 +110,50 @@ footer {
 @media screen and (min-width: 1024px) {
   /* Adjust styles for larger screens here */
 }
+/* Base CSS */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 10px;
+}
+nav ul li a {
+  color: #fff;
+}
+main {
+  padding: 20px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.contact-info {
+  margin-bottom: 20px;
+}
+.development-info {
+  font-size: 0.8em;
+}
+.weather-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+.cta {
+  text-align: center;
+}
+.cta .btn {
+ 
