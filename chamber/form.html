@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Include header content from the course home page -->
+        <h1>Header Content</h1>
+        <!-- Include navigation from the course home page -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- Add other navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <form action="record.html" method="get">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required><br>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required oninput="checkPassword()"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" required title="Please enter a valid email address"><br>
+
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="updateRating()"><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Include footer content from the course home page -->
+        <p>Footer Content</p>
+    </footer>
+
+    <script>
+        // Function to check if password and confirm password match
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+
+            if (password != confirmPassword) {
+                alert("Passwords do not match");
+                document.getElementById("password").value = "";
+                document.getElementById("confirm-password").value = "";
+                document.getElementById("password").focus();
+            }
+        }
+
+        // Function to display current value of range input
+        function updateRating() {
+            var rating = document.getElementById("rating").value;
+            document.getElementById("rating-value").innerText = rating;
+        }
+    </script>
+</body>
+</html>
