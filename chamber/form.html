@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Page</title>
+    <title>Chamber of Commerce and Discover</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development">
+    <meta name="author" content="Deborah Bayode">
+    <meta property="og:title" content="Chamber of Commerce Site Plan">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="c">
+    <meta property="og:url" content="https://debbyjudge.github.io/wdd230/chamber/">
+
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <!-- Include header content from the course home page -->
-        <h1>Header Content</h1>
-        <!-- Include navigation from the course home page -->
+        <h1>Experience Local Culture and Entertainment</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <!-- Add other navigation links as needed -->
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
             </ul>
+            <div class="hamburger">&#9776;</div>
         </nav>
     </header>
 
@@ -44,10 +54,11 @@
 
     <!-- Footer -->
     <footer>
-        <!-- Include footer content from the course home page -->
-        <p>Footer Content</p>
-    </footer>
-
+            
+            <p>&copy; <span id="year"></span> Deborah Bayode, Nigeria</p>
+            <p id="lastModified"></p>
+        </footer>
+        
     <script>
         // Function to check if password and confirm password match
         function checkPassword() {
