@@ -54,30 +54,16 @@
 
     <!-- Footer -->
     <footer>
-            
-            <p>&copy; <span id="year"></span> Deborah Bayode, Nigeria</p>
-            <p id="lastModified"></p>
-        </footer>
-        
+      
+        <section class="development-info">
+            <h2>Development Info</h2>
+            <p>Developed by: DevRoz</p>
+            <p>WDD 230 Project</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </section>
+    </footer>
     <script>
-        // Function to check if password and confirm password match
-        function checkPassword() {
-            var password = document.getElementById("password").value;
-            var confirmPassword = document.getElementById("confirm-password").value;
-
-            if (password != confirmPassword) {
-                alert("Passwords do not match");
-                document.getElementById("password").value = "";
-                document.getElementById("confirm-password").value = "";
-                document.getElementById("password").focus();
-            }
-        }
-
-        // Function to display current value of range input
-        function updateRating() {
-            var rating = document.getElementById("rating").value;
-            document.getElementById("rating-value").innerText = rating;
-        }
+        document.getElementById("lastModified").textContent = document.lastModified;
     </script>
 </body>
 </html>

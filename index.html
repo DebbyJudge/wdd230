@@ -3,94 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deborah Bayode - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development">
-    <meta name="author" content="Deborah Bayode">
-
-    <!-- Opening Graph meta tags -->
-    <meta property="og:title" content="Deborah Bayode - WDD 230 - Web Frontend Development">
-    <meta property="og:description" content="WDD 230 - Web Frontend Development">
-    <!--  'my_image_url' with the actual URL of the image you want to use -->
-    <meta property="og:image" content="https://photos.app.goo.gl/34eXABN6twv9XxVo9">
-    <!-- 'my_page_url' with the actual URL of your webpage -->
-    <meta property="og:url" content="https://debbyjudge.github.io/wdd230/">
+    <title>Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the Chamber of Commerce! Join us to grow your business and stay updated with local events.">
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="website">
+    <meta name="author" content="Deborah Bayode">
+    <meta property="og:image" content="https://photos.app.goo.gl/34eXABN6twv9XxVo9">
+    <meta property="og:url" content="https://debbyjudge.github.io/wdd230/chamber/index.html">
 
-    <!-- Fallback meta tags for non-social media platforms -->
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="Deborah Bayode - WDD 230">
-
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="normalize.css">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <header>
-        <img src="images/debbie.jpg" alt="Deborah Bayode">
-        <h1>Deborah Bayode</h1>
+        <h1>Welcome to the Chamber of Commerce</h1>
         <nav>
             <ul>
-                <li><a href="index.html">|Home|</a></li>
-                <li><a href="chamber-site-plan.html">Chamber</a></li>
-                <li><a href="site-plan.html">Site Plan</a></li>
-                <li><a href="form.html">Form</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <p>WDD 230: Web Frontend Development</p>
-
-        <section class="card">
-            <h2>Learning Activities</h2>
+        <section class="hero">
+            <h2>Hero Section</h2>
+            <picture>
+                <source srcset="images/hero-large.webp 1200w, images/hero-medium.webp 800w, images/hero-small.webp 400w" type="image/webp">
+                <source srcset="images/hero-large.jpg 1200w, images/hero-medium.jpg 800w, images/hero-small.jpg 400w" type="image/jpeg">
+                <img src="images/hero.webp" alt="Hero Image">
+            </picture>
+        </section>
+        <section class="cta">
+            <h2>Join the Chamber of Commerce Today!</h2>
+            <p>Become a member and unlock exclusive benefits</p>
+            <a href="#" class="btn">Join Now</a>
+        </section>
+        <section class="events">
+            <h2>Current Events</h2>
             <ul>
-                <li>Week 01: Grail | Media Query</li>
-                <li>Week 02: Design | Menu | BOM-25</li>
-                <li>Week 03: Webp | Lazy | srcset | localStorage</li>
-                <li>Week 04: #</li>
-                <li>Week 05: #</li>
-                <li>Week 06: #</li>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
             </ul>
         </section>
-        <section class="card">
-            <h2>Information</h2>
-            <p>Number of Visits: <span id="visitCounter">0</span></p>
+        <section class="weather">
+            <h2>Local Weather</h2>
+            <div class="weather-card">
+                <!-- Weather information will be dynamically added here -->
+            </div>
+        </section>
+        <section class="spotlights">
+            <h2>Company Spotlights</h2>
+            <div class="spotlight">
+                <p>Offering business owners a way to connect to each other.</p>
+            </div>
+            <div class="spotlight">
+                <p>Voicing of concerns</p>
+            </div>
+            <div class="spotlight">
+                <p>Lobbying government officials and other business organizations when relevant issues arise</p>
+            </div>
         </section>
     </main>
-
     <footer>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8069790.435797271!2d8.677456999999999!3d9.0338725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1697318119292!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <p>&copy; <span id="year"></span> Deborah Bayode, Nigeria</p>
-        <p id="lastModified"></p>
+        <section class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Address: 123 Chamber Street, City, State ZIP</p>
+            <p>Email: chamber@commerce.com</p>
+            <p>Phone: 123-456-7890</p>
+        </section>
+        <section class="development-info">
+            <h2>Development Info</h2>
+            <p>Developed by: DevRoz</p>
+            <p>WDD 230 Project</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </section>
     </footer>
-
-    <!-- Reference the JavaScript file for dynamic content -->
-    <script src="scripts/getDates.js"></script>
-
     <script>
-        // Dynamically set current year
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Dynamically set last modified date
-        document.getElementById('lastModified').textContent = "Last modified: " + new Date(document.lastModified).toLocaleString();
-
-        // Increment visit counter
-        if(localStorage.getItem('visits')) {
-            let visits = parseInt(localStorage.getItem('visits'));
-            visits++;
-            localStorage.setItem('visits', visits);
-            document.getElementById('visitCounter').textContent = visits;
-        } else {
-            localStorage.setItem('visits', 1);
-            document.getElementById('visitCounter').textContent = 1;
-        }
+        document.getElementById("lastModified").textContent = document.lastModified;
     </script>
 </body>
 </html>

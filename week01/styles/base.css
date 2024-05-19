@@ -1,64 +1,96 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #fff; /* White background */
-    color: #333;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #f5f5f5;
-    padding: 50px;
-    display: flex; /* Use flexbox for easier alignment */
-    justify-content: space-between; /* Space items horizontally */
-    align-items: center; /* Center items vertically */
-}
-
-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
-p {
-    margin: 70px; 
-    font-size: 50px; 
-    color: #333; 
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff; /* Navigation link color */
+    box-sizing: border-box;
+  }
+  
+  /* Base styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header, nav, main, section, footer {
+    border: 1px solid #000; /* Black border for wireframe look */
+    padding: 10px; /* Basic padding */
+    margin-bottom: 10px; /* Space between sections */
+  }
+  
+  header h1, main h2, footer h3, footer h2 {
+    border-bottom: 1px solid #000; /* Underline headings */
+    padding-bottom: 5px; /* Space below headings */
+    margin-bottom: 10px; /* Space below headings */
+  }
+  
+  nav ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    text-align: center; /* Center align list items */
+  }
+  
+  nav ul li {
+    display: inline-block; /* Display list items in a row */
+    margin-right: 10px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+  }
+  
+  nav a {
     text-decoration: none;
-}
-
-.card {
-    margin-bottom: 20px; /* Add some space between cards */
-}
-
-.overlay {
-    background-color: transparent; /* Remove background color */
-    padding: 0; /* Remove padding */
-    border-radius: 0; /* Remove border radius */
-    font-size: inherit; /* Use default font size */
-    color: inherit; /* Use default text color */
-    text-align: center;
-}
-footer {
-    background-color: #c98484; 
-    color: rgb(255, 242, 242);
-    align-items: center;
-    text-align: center;
+    color: #000; /* Black color for links */
+  }
+  
+  main {
     padding: 10px;
-    justify-content: space-between;
-}
- .map {
-    margin-top: 20px;
-}
+  }
+  
+  section {
+    border: 1px dashed #000; /* Dashed border for sections */
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  section img {
+    width: 100%;
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto;
+  }
+  
+  .cta .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #000; /* Button with black border */
+    color: #000; /* Black text color */
+    text-decoration: none;
+    background-color: transparent; /* Transparent background */
+    text-align: center; /* Center align text */
+  }
+  
+  footer {
+    background-color: #f0f0f0; /* Light gray background */
+    text-align: center; /* Center align text */
+    padding: 10px;
+  }
+  
+  footer .contact-info,
+  footer .development-info {
+    border: 1px dashed #000; /* Dashed border for footer sections */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between footer sections */
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    nav ul li {
+      display: block; /* Stack list items vertically on smaller screens */
+      margin-bottom: 10px;
+    }
+  
+    nav ul li:last-child {
+      margin-bottom: 0; /* Remove bottom margin from the last item */
+    }
+  }
+  
