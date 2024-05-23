@@ -95,3 +95,116 @@ footer {
     padding: 20px;
     text-align: center;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh; /* Ensure main content takes full height of viewport */
+}
+
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+    }
+}
+
+form {
+    flex: 2;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    margin-top: 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    width: auto;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+aside {
+    flex: 1;
+    margin-left: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Ensure footer is on top of main content initially */
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.footer-down {
+    transform: translateY(100%);
+}
