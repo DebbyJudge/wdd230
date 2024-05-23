@@ -41,7 +41,7 @@
                 <input type="text" id="lastName" name="lastName" required>
             </label>
             <label for="title">Title/Position:
-                <input type="text" id="title" name="title" pattern="[A-Za-z\s-]{7,}">
+                <input type="text" id="title" name="title" pattern="[A-Za-z\s-]{7,}" required>
             </label>
             <label for="email">Email:
                 <input type="email" id="email" name="email" placeholder="example@domain.com" required>
@@ -71,4 +71,29 @@
             <ul>
                 <li>NP Membership: Access to networking events, newsletters.</li>
                 <li>Bronze Membership: All NP benefits, plus featured listings on our directory.</li>
-        
+                <li>Silver Membership: All Bronze benefits, plus discounted event tickets, training sessions.</li>
+                <li>Gold Membership: All Silver benefits, plus premium advertising, exclusive invites.</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <section class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Address: 123 Chamber Street, City, State ZIP</p>
+            <p>Email: chamber@commerce.com</p>
+            <p>Phone: 123-456-7890</p>
+        </section>
+        <section class="development-info">
+            <h2>Development Info</h2>
+            <p>Developed by: DevRoz</p>
+            <p>WDD 230 Project</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+    <script>
+        document.getElementById("lastModified").textContent = document.lastModified;
+        // Set the current timestamp in the hidden input field
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
+</body>
+</html>
