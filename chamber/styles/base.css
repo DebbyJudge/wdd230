@@ -106,7 +106,7 @@ footer {
     bottom: 0; /* Move the footer to its normal position */
     transform: translateY(0);
 }
-/* Styling the Join Now button */
+* Styling the Join Now button */
 input[type="submit"] {
   background-color: #4CAF50; /* Green background */
   color: white;              /* White text */
@@ -160,3 +160,5 @@ textarea {
   height: 100px;             /* Fixed height for textarea */
   resize: vertical;          /* Allow vertical resizing */
 }
+
+
