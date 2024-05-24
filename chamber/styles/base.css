@@ -1,108 +1,162 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
 }
 
 header h1 {
-  margin: 0;
+    margin: 0;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  position: relative;
-  z-index: 1;
-  min-height: 100vh; /* Ensure main content takes full height of viewport */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh; /* Ensure main content takes full height of viewport */
 }
 
 form {
-  flex: 2;
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 2;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 form h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 form label {
-  display: block;
-  margin-bottom: 15px;
+    display: block;
+    margin-bottom: 15px;
 }
 
 form input, form select, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 form input[type="submit"] {
-  width: auto;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
+    width: auto;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
 }
 
 form input[type="submit"]:hover {
-  background-color: #555;
+    background-color: #555;
 }
 
 aside {
-  flex: 1;
-  margin-left: 20px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-left: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 aside h3 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: -100px; /* Initially position the footer off the screen */
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  transform: translateY(0);
-  transition: transform 0.3s ease, bottom 0.3s ease; /* Ensure smooth transition for both */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: -100px; /* Initially position the footer off the screen */
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    transform: translateY(0);
+    transition: transform 0.3s ease, bottom 0.3s ease; /* Ensure smooth transition for both */
 }
 
 .footer-down {
-  bottom: 0.5; /* Move the footer to its normal position */
-  transform: translateY(0);
+    bottom: 0; /* Move the footer to its normal position */
+    transform: translateY(0);
+}
+/* Styling the Join Now button */
+input[type="submit"] {
+  background-color: #4CAF50; /* Green background */
+  color: white;              /* White text */
+  padding: 15px 20px;        /* Padding for size */
+  border: none;              /* Remove border */
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+  font-size: 16px;           /* Larger font size */
+  margin-top: 20px;          /* Space above the button */
+  display: block;            /* Make it a block element */
+  width: 100%;               /* Full width */
+}
+
+/* Add a hover effect for the button */
+input[type="submit"]:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Ensure the form is properly styled */
+form {
+  max-width: 500px;          /* Limit the form width */
+  margin: 0 auto;            /* Center the form */
+  padding: 20px;             /* Padding around the form */
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 10px;       /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style form labels and inputs */
+label {
+  display: block;            /* Make labels block elements */
+  margin-bottom: 10px;       /* Space below labels */
+  font-weight: bold;         /* Bold text for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;               /* Full width for inputs */
+  padding: 10px;             /* Padding inside inputs */
+  margin-bottom: 20px;       /* Space below inputs */
+  border: 1px solid #ccc;    /* Light gray border */
+  border-radius: 5px;        /* Rounded corners */
+  box-sizing: border-box;    /* Include padding in width */
+}
+
+/* Ensure the textarea is properly styled */
+textarea {
+  height: 100px;             /* Fixed height for textarea */
+  resize: vertical;          /* Allow vertical resizing */
 }
