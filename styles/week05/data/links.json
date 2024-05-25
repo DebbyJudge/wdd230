@@ -1,0 +1,57 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "path/to/your/activity1.html",
+            "title": "Activity 1"
+          },
+          {
+            "url": "path/to/your/activity2.html",
+            "title": "Activity 2"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "path/to/your/activity3.html",
+            "title": "Activity 3"
+          },
+          {
+            "url": "path/to/your/activity4.html",
+            "title": "Activity 4"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "path/to/your/activity5.html",
+            "title": "Activity 5"
+          },
+          {
+            "url": "path/to/your/activity6.html",
+            "title": "Activity 6"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "path/to/your/activity7.html",
+            "title": "Activity 7"
+          },
+          {
+            "url": "path/to/your/activity8.html",
+            "title": "Activity 8"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
