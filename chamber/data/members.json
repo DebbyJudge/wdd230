@@ -1,0 +1,61 @@
+{
+    "members": [
+      {
+        "name": "Company A",
+        "address": "123 Main St, City, State, Zip",
+        "phone": "(123) 456-7890",
+        "website": "https://companya.com",
+        "image": "company1.jpeg",
+        "membershipLevel": "Gold"
+      },
+      {
+        "name": "Company B",
+        "address": "456 Elm St, City, State, Zip",
+        "phone": "(987) 654-3210",
+        "website": "https://companyb.com",
+        "image": "company2.jpeg",
+        "membershipLevel": "Silver"
+      },
+      {
+        "name": "Company C",
+        "address": "789 Oak St, City, State, Zip",
+        "phone": "(555) 123-4567",
+        "website": "https://companyc.com",
+        "image": "company3.jpeg",
+        "membershipLevel": "Bronze"
+      },
+      {
+        "name": "Company D",
+        "address": "321 Pine St, City, State, Zip",
+        "phone": "(222) 333-4444",
+        "website": "https://companyd.com",
+        "image": "company4.jpeg",
+        "membershipLevel": "Gold"
+      },
+      {
+        "name": "Company E",
+        "address": "654 Cedar St, City, State, Zip",
+        "phone": "(888) 777-6666",
+        "website": "https://companye.com",
+        "image": "company5.jpeg",
+        "membershipLevel": "Silver"
+      },
+      {
+        "name": "Company F",
+        "address": "987 Birch St, City, State, Zip",
+        "phone": "(444) 555-6666",
+        "website": "https://companyf.com",
+        "image": "company6.jpeg",
+        "membershipLevel": "Bronze"
+      },
+      {
+        "name": "Company G",
+        "address": "741 Maple St, City, State, Zip",
+        "phone": "(111) 222-3333",
+        "website": "https://companyg.com",
+        "image": "company7.jpeg",
+        "membershipLevel": "Gold"
+      }
+    ]
+  }
+  

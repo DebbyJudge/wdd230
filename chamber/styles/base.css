@@ -162,3 +162,51 @@ textarea {
 }
 
 
+/* Add these to your existing CSS files */
+
+/* Container styles */
+#directory-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+
+#directory-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Optional: Limit the maximum width */
+    margin: 0 auto; /* Center container horizontally within the page */
+  }
+  
+  /* Grid view styles */
+  .grid-view .member-card {
+    flex: 1 1 calc(33.333% - 1rem);
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* List view styles */
+  .list-view {
+    flex-direction: column;
+  }
+  
+  .list-view .member-card {
+    flex: 1 1 100%;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  /* Image styles */
+  .member-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
