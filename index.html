@@ -7,58 +7,125 @@
     <meta name="description" content="Welcome to the Chamber of Commerce! Join us to grow your business and stay updated with local events.">
     <link rel="icon" href="favicon.ico">
     
-    <!-- Social Media Meta Tags -->
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta name="author" content="Deborah Bayode">
     <meta property="og:image" content="https://photos.app.goo.gl/34eXABN6twv9XxVo9">
     <meta property="og:url" content="https://debbyjudge.github.io/wdd230/chamber/index.html">
 
-    <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-
 </head>
 <body>
     <header>
-        <h1>My Web Development Project</h1>
-    </header>
-    <nav>
-        <!-- Dynamic links will be inserted here -->
-    </nav>
-    <main>
-        <section>
-            <h2>Week 1</h2>
+        <h1>WDD 230  Web Development</h1>
+        <nav>
             <ul>
-                <li><a href="week1/activity1.html">Activity 1</a></li>
-                <li><a href="week1/activity2.html">Activity 2</a></li>
+                <section class="debbie"
+                <img src="images/debbie.jpg" alt="Deborah Judge">
+            
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+                
             </ul>
+           
+        </nav>
+    </header>
+
+    <!-- Hero Image Section -->
+    <section class="hero">
+        <div class="hero-title">
+            <h2>Mesa Arizona Temple</h2>
+        </div>
+        <picture>
+            <source media="(max-width: 400px )" srcset="images/hero-640x400.webp" />
+            <source media="(max-width: 960px )" srcset="images/hero-960x600.webp" />
+            <img src="images/hero-1280x800.webp" alt="Mesa Arizona LDS Temple" width="1280" height="800" />
+        </picture>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <h1>WDD 230 〰 Web Development</h1>
+        <p>This page demonstrates various web development techniques and best practices.</p>
+
+        <!-- Number of Visits -->
+        <div id="visit-count"></div>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <header>
+                <h1>OpenWeatherMap.org API Test</h1>
+            </header>
+            <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
         </section>
-        <section>
-            <h2>Week 2</h2>
+
+        <!-- Learning Activities Section -->
+        <section class="learning-activities">
+            <h2>Learning Activities</h2>
             <ul>
-                <li><a href="week2/activity3.html">Activity 3</a></li>
-                <li><a href="week2/activity4.html">Activity 4</a></li>
+                <li>Lesson 01: Applied JavaScript</li>
+                <li>Lesson 02: Web Design Principles | CSS Media Queries | Design Principles Assignment</li>
+                <li>Lesson 03: CSS Combinators | CSS Pseudo-elements | Responsive Menu</li>
+                <li>Lesson 04: CSS Pseudo-Classes</li>
+                <li>Lesson 05: Book of Mormon Favorite Chapters</li>
+                <li>Lesson 06: Landscape Image | Responsive Images</li>
+                <li>Lesson 07: Lazy Loading | Local Storage</li>
+                <li>Lesson 08: Table Build | Form Build</li>
+                <li>Lesson 09: JSON File | Fetch API</li>
+                <li>Lesson 10: Weather API</li>
+                <li>Lesson 11:</li>
+                <li>Lesson 12:</li>
+                <li>Lesson 13:</li>
+                <li>Lesson 14:</li>
             </ul>
         </section>
     </main>
-    <div class="weather-card">
-        <h2>Current Weather</h2>
-        <p id="temp">Temperature: --°F</p>
-        <p id="description">Description: --</p>
-        <img id="weather-icon" src="" alt="Weather icon">
-    </div>
 
-    <div id="links-container">
-        <!-- Dynamic links will be inserted here -->
-    </div>
+    <!-- Google Map Section -->
+    <section class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509682!2d144.95512331531592!3d-37.81625997975175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f3f3c77f%3A0x5045675218ce7e33!2sVictoria!5e0!3m2!1sen!2sau!4v1487744102358"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 
     <footer>
-        Deborah Judge | WDD 230
+        <p>&copy; <span id="year"></span> Deborah Bayode, Nigeria</p>
+        <p id="lastModified"></p>
     </footer>
 
     <script src="scripts/weather.js"></script>
-    <script src="scripts/links.js"></script>
+    <script>
+        // Function to check if password and confirm password match
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match");
+                document.getElementById("password").value = "";
+                document.getElementById("confirm-password").value = "";
+                document.getElementById("password").focus();
+            }
+        }
+
+        // Function to display current value of range input
+        function updateRating() {
+            var rating = document.getElementById("rating").value;
+            document.getElementById("rating-value").innerText = rating;
+        }
+
+        // Set current year and last modified date
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+    </script>
 </body>
 </html>

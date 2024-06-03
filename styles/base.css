@@ -1,0 +1,112 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    margin: 0;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #111;
+}
+.hero {
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+.hero-title {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #6596c5);
+    border: 1px solid rgba(101, 150, 197, 1);
+    padding: 0.8rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.65;
+    white-space: nowrap;
+}
+.hero-title p {
+    margin: 0;
+    padding: 0.25rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: to improve text readability */
+    padding: 10px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Weather Section */
+.weather {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* Learning Activities Section */
+.learning-activities ul {
+    list-style-type: none;
+    padding: 0;
+}
+.learning-activities ul li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Google Map Section */
+.map {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer img {
+    width: 50px;
+    height: auto;
+    margin-top: 10px;
+}
+.debbie img {
+width: 100px;
+}
