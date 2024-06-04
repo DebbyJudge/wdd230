@@ -3,69 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course homepage</title>
-    <meta name="description" content="Welcome to the Chamber of Commerce! Join us to grow your business and stay updated with local events.">
-    <link rel="icon" href="favicon.ico">
-    
-    <meta property="og:title" content="Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta name="author" content="Deborah Bayode">
-    <meta property="og:image" content="https://photos.app.goo.gl/34eXABN6twv9XxVo9">
-    <meta property="og:url" content="https://debbyjudge.github.io/wdd230/chamber/index.html">
-
-    <link rel="stylesheet" href="styles/normalize.css">
+    <title>Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
     <header>
-        <h1>WDD 230  Web Development</h1>
-        <nav>
-            <ul>
-                <section class="debbie"
-                <img src="images/debbie.jpg" alt="Deborah Judge">
-            
-                <li><a href="index.html">Home</a></li>
-                <li><a href="chamber-site-plan">Site Plan</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contact</a></li>
-                
-            </ul>
-           
-        </nav>
+        <h1>Chamber of Commerce</h1>
     </header>
-
-    <!-- Hero Image Section -->
-    <section class="hero">
-        <div class="hero-title">
-            <h2>Mesa Arizona Temple</h2>
-        </div>
-        <picture>
-            <source media="(max-width: 400px )" srcset="images/hero-640x400.webp" />
-            <source media="(max-width: 960px )" srcset="images/hero-960x600.webp" />
-            <img src="images/hero-1280x800.webp" alt="Mesa Arizona LDS Temple" width="1280" height="800" />
-        </picture>
-    </section>
-
-    <!-- Main Content -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="directory.html">Membership</a></li>
+            <li><a href="discover.html">Events</a></li>
+            <li><a href="join.html">Contact</a></li>
+        </ul>
+    </nav>
     <main>
-        <h1>WDD 230 〰 Web Development</h1>
-        <p>This page demonstrates various web development techniques and best practices.</p>
-
-        <!-- Number of Visits -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Hero Image">
+        </section>
+        <section class="call-to-action">
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </section>
         <div id="visit-count"></div>
 
         <!-- Weather Section -->
         <section class="weather">
             <header>
-                <h1>OpenWeatherMap.org API Test</h1>
+                <h1>Weather Forecast</h1>
             </header>
             <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
-            <figure>
-                <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
-            </figure>
+            <p>Current weather: <span id="current-weather"></span></p>
+            <h2>Three Day Forecast</h2>
+            <div id="forecast">
+                <!-- Forecast data will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Spotlight Advertisements Section -->
+        <section class="spotlight-advertisements">
+            <h1>Spotlight Advertisements</h1>
+            <div id="spotlight-ads">
+                <!-- Spotlight advertisements will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Banner for Chamber Meet and Greet -->
+        <section class="meet-and-greet-banner">
+            <h1>Chamber Meet and Greet</h1>
+            <p>Join us for the Chamber Meet and Greet on Wednesday at 7:00 p.m.</p>
+            <button id="close-banner">Close</button>
         </section>
 
         <!-- Learning Activities Section -->
@@ -92,9 +84,7 @@
 
     <!-- Google Map Section -->
     <section class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509682!2d144.95512331531592!3d-37.81625997975175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f3f3c77f%3A0x5045675218ce7e33!2sVictoria!5e0!3m2!1sen!2sau!4v1487744102358"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509682!2d144.95512331531592!3d-37.81625997975175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f3f3c77f%3A0x5045675218ce7e33!2sVictoria!5e0!3m2!1sen!2sau!4v1487744102358" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <footer>
