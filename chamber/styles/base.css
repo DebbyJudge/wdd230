@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-    color: #333;
+   
 }
 
 
@@ -24,19 +24,22 @@ header h1 {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
-    justify-content: space-around;
-    padding: 0;
+    justify-content: space-between;
 }
 
-nav ul li a {
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff; /* Navigation link color */
     text-decoration: none;
-    color: #333;
 }
 
 .hero, .call-to-action, .current-events, .weather, .company-spotlights {
-    background-color: #fff;
+    background-color: #333;
     padding: 10px;
 }
 
@@ -105,7 +108,7 @@ nav ul li a {
 
 
 footer {
-    background-color: #e0e0e0;
+    background-color: #e0e0e0b6;
     text-align: center;
     border-top: 1px solid #ccc;
     padding: 10px;
