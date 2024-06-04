@@ -22,17 +22,17 @@
         <h1>WDD 230  Web Development</h1>
         <nav>
             <ul>
-                <section class="debbie"
-                <img src="images/debbie.jpg" alt="Deborah Judge">
-            
+                <!-- Corrected section tag closing -->
+                <section class="debbie">
+                    <img src="images/debbie.jpg" alt="Deborah Judge">
+                </section>
+                <!-- Corrected URL for the site plan link -->
                 <li><a href="index.html">Home</a></li>
-                <li><a href="chamber-site-plan">Site Plan</a></li>
+                <li><a href="chamber-site-plan.html">Site Plan</a></li>
                 <li><a href="#">Membership</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">Contact</a></li>
-                
             </ul>
-           
         </nav>
     </header>
 
@@ -71,7 +71,7 @@
         <!-- Learning Activities Section -->
         <section class="learning-activities">
             <h2>Learning Activities</h2>
-            <ul>
+            <ul id="activities-list">
                 <li>Lesson 01: Applied JavaScript</li>
                 <li>Lesson 02: Web Design Principles | CSS Media Queries | Design Principles Assignment</li>
                 <li>Lesson 03: CSS Combinators | CSS Pseudo-elements | Responsive Menu</li>
@@ -126,6 +126,21 @@
         // Set current year and last modified date
         document.getElementById("year").textContent = new Date().getFullYear();
         document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+
+        // Fetch data from links.json and display it
+        fetch('data/links.json')
+            .then(response => response.json())
+            .then(data => {
+                const activitiesList = document.getElementById('activities-list');
+                data.activities.forEach(activity => {
+                    const li = document.createElement('li');
+                    li.textContent = activity;
+                    activitiesList.appendChild(li);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching the JSON data:', error);
+            });
     </script>
 </body>
 </html>
