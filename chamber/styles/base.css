@@ -2,15 +2,27 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-   
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh; /* Ensure main content takes full height of viewport */
+    padding-bottom: 60px; /* Add bottom padding to avoid footer overlap */
+}
 
 header {
     background-color: #333;
@@ -89,6 +101,7 @@ nav a {
     margin: 20px 0;
     text-align: center;
 }
+
 .learning-activities ul {
     list-style-type: none;
     padding: 0;
@@ -106,58 +119,12 @@ nav a {
     text-align: center;
 }
 
-
-footer {
-    background-color: #e0e0e0b6;
-    text-align: center;
-    border-top: 1px solid #ccc;
-    padding: 10px;
-    position: relative;
-}
-
-@media (min-width: 600px) {
-    nav ul {
-        justify-content: space-between;
-    }
-
-    .call-to-action {
-        text-align: center;
-    }
-
-    .company-spotlights {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .company-spotlights .spotlight {
-        flex: 1;
-        margin: 0 10px;
-    }
-}
-.learning-activities ul {
-    list-style-type: none;
-    padding: 0;
-}
-.learning-activities ul li {
-    background-color: #f9f9f9;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Google Map Section */
-.map {
-    margin: 20px 0;
-    text-align: center;
-}
 /* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
 
 .hamburger {
     display: none;
@@ -208,15 +175,6 @@ footer {
     height: auto;
 }
 
-footer {
-    background-color: #e0e0e0;
-    text-align: center;
-    border-top: 1px solid #999;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -248,14 +206,6 @@ footer {
     .hamburger {
         display: none;
     }
-}
-main {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-    min-height: 100vh; /* Ensure main content takes full height of viewport */
 }
 
 form {
@@ -324,24 +274,12 @@ aside h3 {
 
 footer {
     background-color: #333;
-    color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: -100px; /* Initially position the footer off the screen */
-    left: 0;
     width: 100%;
-    z-index: 2;
-    transform: translateY(0);
-    transition: transform 0.3s ease, bottom 0.3s ease; /* Ensure smooth transition for both */
+    height: 60px; /* Set the height of the footer */
 }
 
-.footer-down {
-    bottom: 0; /* Move the footer to its normal position */
-    transform: translateY(0);
-}
-
-/* Container styles */
 #directory-container {
     display: flex;
     flex-wrap: wrap;
@@ -357,25 +295,4 @@ footer {
     flex: 1 1 calc(33.333% - 1rem);
     border: 1px solid #ccc;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-/* List view styles */
-.list-view {
-    flex-direction: column;
-}
-
-.list-view .member-card {
-    flex: 1 1 100%;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-/* Image styles */
-.member-card img {
-    max-width: 100%;
-    height: auto;
-}
+    box-shadow: 0 2px 5px rgba(0, 
